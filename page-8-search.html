@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="icon" type="image/x-icon" href="favicons.ico">
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="page-phone.css">
+    <script src="search.js"></script>
+</head>
+
+<body class="scrollbar">
+    <div class="spacer"></div>
+    <div class="container flex">
+        <div class="left flex column">
+            <div class="left-bar-1">
+                <ul class="flex  column gap">
+                    <li>
+                        <a href="https://open.spotify.com/" target="_blank"><img class="icons" src="assets/logo.svg"
+                                alt="spotify logo"></a>
+                    </li>
+                    <li>
+                        <a class="flex row align_center gap-2" href="index.html"><img class="icons filter"
+                                src="assets/home.svg" alt="home logo">Home</a>
+                    </li>
+                    <li id="search">
+                        <a class="flex row align_center gap-2 dim" href="page-8-search.html">
+                            <img class="icons filter-2" src="assets/search.svg" alt="Search"> Search</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="left-bar-2  flex column space-between">
+                <div>
+                    <ul>
+                        <div class="flex align_center space-between ">
+                            <a class="library flex row align_center dim gap-2" href="#">
+                                <img class="icons filter-2 " src="assets/library.svg" alt="Library logo">Your Library
+                            </a>
+                            <div class="dim">
+                                <a href="#">
+                                    <img title="Create Playlist or Folder" class=" plus icons filter-2 "
+                                        src="assets/plus.svg" alt="plus icon">
+                                </a>
+                            </div>
+                        </div>
+                        <li class="playlist scrollbar">
+                            <div class="card flex column justify-content">
+                                <div>
+                                    <h1>Create your first Playlist</h1>
+                                </div>
+                                <div>
+                                    <h2>It's easy we'll help you</h2>
+                                </div>
+                                <div>
+                                    <button type="button" class="button pointer flex align_center">Create
+                                        Playlist</button>
+                                </div>
+                            </div>
+                            <div class="card flex column">
+                                <div>
+                                    <h1>Lets find some podcasts to follow</h1>
+                                </div>
+                                <div>
+                                    <h2>we'll keep you updated on new episodes</h2>
+                                </div>
+                                <div>
+                                    <a href="https://open.spotify.com/genre/podcasts-web" target="_blank">
+
+                                        <button class="button flex align_center">Browse podcasts</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer flex ">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span>Safety &amp; Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="eng-button">
+
+                    <button class=" button flex align_center "> <img class=" filter" src="assets/lang.svg"
+                            alt="">English</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="right">
+
+            <div class="navbar">
+                <nav class="flex space-between align_center" >
+                    <div class=" flex  align_center gap-2 filter  flex ">
+                        <a href="index.html">
+                            <img class="icons filter-2  " src="assets/less.svg" alt="left">
+                        </a>
+                        <a href="#">
+                            <img class="icons filter-2 no-cursor " src="assets/greater.svg" alt="right">
+                        </a>
+                        <div class="search flex align_center gap">
+                            <img  src="assets/search.svg" alt="">
+
+                            <input type="search" autofocus>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F">
+
+                            <button class="button signup dim-2" >Sign Up</button>
+                        </a>
+                        <a href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fopen.spotify.com%2F">
+
+                            <button class="button login">Log in</button>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+            <div id="home" class="home flex column">
+
+                <div class="rectangle flex  gap-2 column">
+                    <div class="category">
+                        <div class="box flex space-between align_center">
+                            <h1><a href="#">Categories</a></h1>
+                            <h2>
+                                <a href="#">Show all</a>
+                            </h2>
+                        </div>
+                        <div class="flex row wrap">
+                            <a class="pod-box  " href="#">
+                                <div class="podcard c1">
+                                    <img src="https://t.scdn.co/images/7262179db37c498480ef06bfacb60310.jpeg" alt="">
+                                    <p>Podcast Charts</p>
+                                </div>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c2">
+                                    <img src="https://t.scdn.co/images/209c867f5bb34076b0dcc9deeb1868e6" alt="">
+                                    <p>Podcasts New Releases</p>
+                                </div>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c3">
+                                    <img src="https://i.scdn.co/image/9af79fd06e34dea3cd27c4e1cd6ec7343ce20af4" alt="">
+                                    <p>Video Podcasts</p>
+                                </div>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c4">
+                                    <img src="https://i.scdn.co/image/ab6765630000ba8aaa4830256e4b613f07287208" alt="">
+                                    <p>Self-help</p>
+                                </div>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c5">
+                                    <img src="	https://i.scdn.co/image/e227cd9674618024276c65f1213fb05af34cf512" alt="">
+                                    <p>Business & Technology</p>
+                                </div>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c6">
+                                    <img src="https://i.scdn.co/image/96b8b3d5b7c1a5ae952c7489406602539ce651c8" alt="">
+                                    <p>Educational</p>
+                                </div>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c7">
+                                    <img src="	https://i.scdn.co/image/ab6765630000ba8a4d2153e40a1519784f2b1f3c" alt="">
+                                    <p>Devotion & Mythology</p>
+                                </div>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c8">
+                                    <img src="https://i.scdn.co/image/ab6765630000ba8ad67aca773e6929c69a4102ba" alt="">
+                                    <p>Stories</p>
+                                </div>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c9">
+                                    <img src="https://i.scdn.co/image/ab6765630000ba8acf45bab65eff11e08f59fba5" alt="">
+                                    <p>Love & Relationships</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" footer-right  flex row space-between ">
+                    <div>
+                        <ul class="flex column" role="list">
+                            <p>Company</p>
+                            <a href="https://www.spotify.com/in-en/about-us/contact/" role="link">
+                                <span>About</span>
+                            </a>
+                            <a href="https://www.lifeatspotify.com/" role="link">
+                                <span>Jobs</span>
+                            </a>
+                            <a href="https://newsroom.spotify.com/" role="link">
+                                <span>For the Record</span>
+                            </a>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="flex column" role="list">
+                            <p>Communities</p>
+                            <a href="https://artists.spotify.com/" role="link">
+                                <span>For Artists</span>
+                            </a>
+                            <a href="https://developer.spotify.com/" role="link">
+                                <span>Developers</span>
+                            </a>
+                            <a href="https://ads.spotify.com/" role="link">
+                                <span>Advertising</span>
+                            </a>
+                            <a href="https://investors.spotify.com/" role="link">
+                                <span>Investors</span>
+                            </a>
+                            <a href="https://spotifyforvendors.com/" role="link">
+                                <span>Vendors</span>
+                            </a>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="flex column" role="list">
+                            <p>Useful links</p>
+                            <a href="https://support.spotify.com/" role="link">
+                                <span>Support</span>
+                            </a>
+                            <a href="https://www.spotify.com/in-en/free/" role="link">
+                                <span>Free Mobile App</span>
+                            </a>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="flex column " role="list">
+                            <p>Spotify Plans</p>
+                            <a href="https://www.spotify.com/in-en/premium/?ref=spotifycom_footer_premium_individual"
+                                role="link">
+                                <span>Premium Individual</span>
+                            </a>
+                            <a href="https://www.spotify.com/in-en/duo/?ref=spotifycom_footer_premium_duo" role="link">
+                                <span>Premium Duo</span>
+                            </a>
+                            <a href="https://www.spotify.com/in-en/family/?ref=spotifycom_footer_premium_family"
+                                role="link">
+                                <span>Premium Family</span>
+                            </a>
+                            <a href="https://www.spotify.com/in-en/student/?ref=spotifycom_footer_premium_student"
+                                role="link">
+                                <span>Premium Student</span>
+                            </a>
+                            <a href="https://www.spotify.com/in-en/free/?ref=spotifycom_footer_free" role="link">
+                                <span>Spotify Free</span>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="link flex column gap-2">
+                        <div class=" link-1 flex gap-2 space-between">
+                            <div class="hover-scale">
+                                <a href="https://instagram.com/spotify" aria-label="Instagram" title="Instagram"
+                                    target="_blank" rel="noopener noreferrer">
+
+                                    <div class="logo-2"><img class="filter  icons" src="assets/insta.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hover-scale">
+
+                                <a href="https://twitter.com/spotify" aria-label="Twitter" title="Twitter"
+                                    target="_blank" rel="noopener noreferrer">
+
+                                    <div class="logo-2"> <img class="filter icons" src="assets/twitter.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hover-scale">
+                                <a href="https://facebook.com/spotify" aria-label="Facebook" title="Facebook"
+                                    target="_blank" rel="noopener noreferrer">
+
+                                    <div class="logo-2"> <img class="filter icons" src="assets/facebook.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin: 10px;" size="1">
+
+                <div class="rectangle footer-last">
+                    <h4>
+                        &copy 2024 Spotify AB
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

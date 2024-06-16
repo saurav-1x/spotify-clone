@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="logo ">
+            <img class="filter" src="assets/sp-logo.svg " alt="">
+        </div>
+        <div class="header ">
+            <center>
+                Sign up to start listening
+            </center>
+        </div>
+        <form id="signup-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <div id="email-error" class="error" style="display: none;">Please enter a valid email address</div>
+            <div id="password-section"  style="display: none;">
+                <label for="password">Create Password:</label>
+                <input class="input-2" type="password" id="password" minlength="5" required>
+                <div id="password-error" class="error" style="display: none;">Password must be at least 5 characters</div>
+            </div>
+            <div class="green">
+                <a href="#">
+                    <p class="text ">Use phone number instead.</p>
+                </a>
+            </div>
+            <button class="text g-button" type="submit" id="signup-btn" onclick="handleSignup()"> <span>Next</span></button>
+        </form>
+    
+
+        <div class="line">
+            <span>or</span>
+        </div>
+
+        <div>
+            <button><img class="icons" src="assets/google.svg" alt="google"> <span>
+                    Sign up with google
+                </span> </button>
+        </div>
+        <div>
+            <button><img class="icons" src="assets/facebook-2.svg" alt="facebook"> <span>
+                    Sign up with facebook
+                </span> </button>
+        </div>
+        <div>
+            <button><img class="icons" src="assets/apple.svg" alt="apple"> <span>
+                    Sign up with apple
+                </span> </button>
+        </div>
+        <div class="line"></div>
+
+        <footer class="flex column gap-2">
+            <p class="text">
+                Already have an account? <a href="#">Log in here.</a>
+            </p>
+            <div class="small-t">
+                This site is protected by reCAPTCHA and the Google
+                <a href="https://policies.google.com/privacy"> Privacy Policy</a> and <a
+                    href="https://policies.google.com/terms">Terms of Service</a> apply.
+            </div>
+        </footer>
+
+
+
+    </div>
+
+    <script>
+
+        document.getElementById('signup-form').addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                // event.preventDefault();
+                handleSignup();
+            }
+        });
+
+        function showPasswordInput() {
+            document.getElementById('password-section').style.display = 'block';
+        }
+
+        function handleSignup() {
+            const emailInput = document.getElementById('email');
+            const passwordSection = document.getElementById('password-section');
+            const passwordInput = document.getElementById('password');
+            const emailError = document.getElementById('email-error');
+            const passwordError = document.getElementById('password-error');
+
+            const emailValue = emailInput.value;
+            const isGmail = emailValue.endsWith("@gmail.com");
+
+            // emailError.style.display = 'none';
+            // passwordError.style.display = 'none';
+
+            if (!passwordSection.style.display || passwordSection.style.display === 'none') {
+                if (emailInput.checkValidity() && isGmail) {
+                    showPasswordInput();
+                    passwordInput.focus();
+                } else {
+                    emailError.style.display = 'block';
+                }
+            } else {
+                if (emailInput.checkValidity() && isGmail && passwordInput.value.length >= 5) {
+                    // alert("signup successful... redirecting to Home page");
+                    // window.location.href = "index.html";
+                } else {
+                    if (!isGmail) {
+                        emailError.style.display = 'block';
+                    }
+                    if (passwordInput.value.length < 5) {
+                        passwordError.style.display = 'block';
+                    }
+                }
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; 
+  background-image: linear-gradient(
+    rgb(39, 39, 39),
+    rgb(20, 20, 20),
+    rgb(0, 0, 0),
+    rgb(0, 0, 0)
+  );
+}
+main {
+  background-color: #151515;
+  margin: 30px 0px;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 8px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  gap: 30px;
+}
+.logo img {
+  height: 55px;
+}
+header h1 {
+  font-size: 32px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 324px;
+}
+.btn {
+  background-color: black;
+  padding: 12px 20px;
+  border: 1px solid gray;
+  border-radius: 45px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+  cursor: pointer;
+}
+.btn span {
+  margin: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+.line {
+  width: 70%;
+  border-top: 1px solid rgb(51, 51, 51);
+}
+.input-section div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-section {
+  width: 324px;
+}
+.input-section label {
+  font-size: 14px;
+  font-weight: 700;
+}
+.input-section input {
+  padding: 15px;
+  background-color: black;
+  color: gray;
+  border: none;
+  outline: 1px solid gray;
+  border-radius: 5px;
+  position: relative;
+}
+.eye img {
+  height: 20px;
+  position: relative;
+  float: right;
+  right: 10px;
+  bottom: 42px;
+  cursor: pointer;
+}
+.eye img:hover {
+ transform: scale(1.05);
+}
+.indicator {
+  width: 324px;
+  font-size: 11px;
+  font-weight: 600;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.indicator .box {
+  height: 16px;
+  width: 30px;
+  background-color: #1ed760;
+  border-radius: 10px;
+}
+.indicator .box .box-2 {
+  height: 12px;
+  position: relative;
+  width: 12px;
+  left: 15px;
+  top: 2px;
+  border-radius: 50%;
+  background-color: black;
+}
+.g-button {
+  background-color: #1ed760;
+  color: black;
+  border: none;
+}
+.forgot a,
+section a {
+  color: white;
+}
+section {
+  padding: 45px 0px;
+  color: rgb(167, 167, 167);
+}
+footer {
+  padding: 30px 0px;
+  background-color: #151515;
+  width: 100vw;
+  display: flex;
+}
+footer span {
+  font-size: 11px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: auto;
+  color: rgb(167, 167, 167);
+}
+footer a {
+  color: rgb(167, 167, 167);
+}
+form div input:hover,button:hover{
+  outline: 1px solid white;
+}
+.switch {
+  position: relative;
+  width: 50px;
+  height: 25px;
+}
+.switch input {
+  opacity: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00c832;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  right : 4px;
+  bottom: 4px;
+  background-color: rgb(0, 0, 0);
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #cccccc;
+}
+
+input:checked + .slider:before {
+  transform: translateX(-26px);
+}

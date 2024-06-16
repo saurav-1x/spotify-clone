@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Spotify</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="utility.css">
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="logo ">
+            <img class="filter" src="assets/sp-logo.svg" alt="">
+        </div>
+        <header>
+
+            <h1>Log in to Spotify</h1>
+        </header>
+        <div class="buttons">
+
+            <button class="btn">
+                <img src="assets/google.svg" alt=""><span>
+                    Continue with Google
+                </span>
+            </button>
+            <button class="btn">
+                <img src="assets/facebook-2.svg" alt=""><span>
+                    Continue with Facebook
+                </span>
+            </button>
+            <button class="btn">
+                <img src="assets/apple.svg" alt=""><span>
+                    Continue with Apple
+                </span>
+            </button>
+            <button class="btn"><span> Continue with Phone Number
+                </span>
+            </button>
+        </div>
+        <div class="line"></div>
+        <form id="signup-form" class="input-section flex gap-2 column">
+            <div>
+
+                <label for="email">Email or username <br></label>
+                <input type="email" id="email" placeholder="Email or Username" required>
+            </div>
+            <div>
+                <label for="password">Password <br></label>
+                <div class="rem">
+
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="eye"> <img src="assets/eyecross.svg" alt=""></span>
+                </div>
+
+            </div>
+            <div class="indicator flex " style="    display: flex;
+            flex-direction: row;
+        ">
+                <label class="switch">
+                    <input type="checkbox" id="toggleSwitch">
+                    <span class="slider"></span>
+                </label>
+                <p>Remember me</p>
+            </div>
+            <div class="buttons">
+
+                <button type="submit" class="btn g-button"> <span>Log in</span></button>
+            </div>
+        </form>
+        <div class="forgot">
+
+            <a href="#">Forgot your Password ?</a>
+        </div>
+        <div class="line"></div>
+        <section>Don't have an account <a href="#">Sign up for Spotify.</a></section>
+
+
+    </main>
+    <footer> <span>This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a
+                href="#">Terms of Service</a> apply.</span></footer>
+
+
+
+</body>
+
+</html>

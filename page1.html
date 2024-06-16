@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="icon" type="image/x-icon" href="favicons.ico">
+     <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="page-phone.css">
+</head>
+
+<body class="scrollbar">
+    <div class="spacer"></div>
+    <div class="container flex">
+        <div class="left flex column">
+            <div class="left-bar-1">
+                <ul class="flex  column gap">
+                    <li>
+                        <a href="https://open.spotify.com/" target="_blank"><img class="icons" src="assets/logo.svg"
+                                alt="spotify logo"></a>
+                    </li>
+                    <li>
+                        <a class="flex row align_center gap-2" href="#home"><img class="icons filter"
+                                src="assets/home.svg" alt="home logo">Home</a>
+                    </li>
+                    <li>
+                        <a class="flex row align_center gap-2 dim" href="https://open.spotify.com/search"
+                            target="_blank"><img class="icons filter-2" src="assets/search.svg" alt="Search"> Search</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="left-bar-2  flex column space-between">
+                <div>
+
+                    <ul>
+                        <div class="flex align_center space-between ">
+
+
+                            <a class="library flex row align_center dim gap-2" href="#">
+                                <img class="icons filter-2 " src="assets/library.svg" alt="Library logo">Your Library
+                            </a>
+
+
+                            <div class="dim">
+                                <a href="#">
+                                    <img title="Create Playlist or Folder" class=" plus icons filter-2 "
+                                        src="assets/plus.svg" alt="plus icon">
+                                </a>
+                            </div>
+                        </div>
+                        <li class="playlist scrollbar">
+                            <div class="card flex column justify-content">
+
+                                <div>
+                                    <h1>Create your first Playlist</h1>
+                                </div>
+                                <div>
+                                    <h2>It's easy we'll help you</h2>
+                                </div>
+                                <div>
+                                    <button type="button" class="button pointer flex align_center">Create
+                                        Playlist</button>
+                                </div>
+                            </div>
+                            <div class="card flex column">
+                                <div>
+                                    <h1>Lets find some podcasts to follow</h1>
+                                </div>
+                                <div>
+                                    <h2>we'll keep you updated on new episodes</h2>
+                                </div>
+                                <div>
+                                    <a href="page7-podcast.html" target="_blank">
+
+                                        <button class="button flex align_center">Browse podcasts</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer flex ">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span>Safety &amp; Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="eng-button">
+
+                    <button class=" button flex align_center "> <img class=" filter" src="assets/lang.svg"
+                            alt="">English</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+
+            <div class="navbar">
+                <nav class="flex space-between align_center">
+                    <div class="gap-2 filter  flex ">
+                        <a href="index.html">
+
+                            <img class="icons filter-2  " src="assets/less.svg" alt="left">
+                        </a>
+                        <a href="#">
+
+                            <img class="icons filter-2 no-cursor " src="assets/greater.svg" alt="right">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="signup.html">
+
+                            <button class="button signup dim-2">Sign Up</button>
+                        </a>
+                        <a href="login.html">
+
+                            <button class="button login">Log in</button>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div id="home" class="home flex column">
+                <div class="rectangle flex column gap-2">
+                    <div class=" box flex column  space-around">
+                        <div class=" flex space-between align_center">
+
+                            <h1><a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3C">Popular artists</a>
+                            </h1>
+                        </div>
+                        <div class="flex wrap gap row">
+
+                            <a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">
+                                <div class="frame flex column gap ">
+                                    <div class="photo ">
+                                        <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                            alt="">
+                                        <img title="Play Pritam" class="icons prep" src="assets/play.svg"
+                                            alt="play button">
+                                    </div>
+                                    <div class="name">
+                                        <h3>Pritam</h3>
+                                    </div>
+                                    <div class="passion">
+                                        <h4>Artist</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw">
+                                <div class="frame flex column gap ">
+                                    <div class="photo"><img
+                                            src="https://i.scdn.co/image/ab676161000051740261696c5df3be99da6ed3f3"
+                                            alt="">
+                                        <img title="Play Arijit Singh" class="icons prep" src="assets/play.svg"
+                                            alt="play button">
+                                    </div>
+
+                                    <div class="name">
+                                        <h3>Arijit singh</h3>
+                                    </div>
+                                    <div class="passion">
+                                        <h4>Artist</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG">
+                                <div class="frame flex column gap ">
+                                    <div class="photo"><img
+                                            src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+                                            alt="">
+                                        <img title="Play A.R. Rahman" class="icons prep" src="assets/play.svg"
+                                            alt="play button">
+                                    </div>
+
+                                    <div class="name">
+                                        <h3>A.R Rahman</h3>
+                                    </div>
+                                    <div class="passion">
+                                        <h4>Artist</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/artist/4zCH9qm4R2DADamUHMCa6O">
+                                <div class="frame flex column gap">
+                                    <div class="photo"><img
+                                            src=https://i.scdn.co/image/ab67616100005174fc7c542c04b5f7dc8f1b1c16 alt="">
+                                        <img title="Play Anirudh Ravichancer" class=" prep icons" src="assets/play.svg"
+                                            alt="play button">
+                                    </div>
+
+                                    <div class="name">
+                                        <h3>Anirudh Ravichander</h3>
+                                    </div>
+                                    <div class="passion">
+                                        <h4>Artist</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/artist/5wJ1H6ud777odtZl5gG507">
+                                <div class="frame flex column gap">
+                                    <div class="photo"><img
+                                            src="https://i.scdn.co/image/ab67616100005174fb13d10be20fdcb5a670f551"
+                                            alt="">
+                                        <img class=" prep icons" src="assets/play.svg" alt="play button">
+                                    </div>
+
+                                    <div class="name">
+                                        <h3>Vishal Mishra</h3>
+                                    </div>
+                                    <div class="passion">
+                                        <h4>Artist</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/artist/5wJ1H6ud777odtZl5gG507">
+                                <div class="frame flex column gap">
+                                    <div class="photo">
+                                        <img src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84" alt="">
+                                        
+                                        <img class=" prep icons" src="assets/play.svg" alt="play button">
+                                    </div>
+
+                                    <div class="name">
+                                        <h3>Atif Aslam</h3>
+                                    </div>
+                                    <div class="passion">
+                                        <h4>Artist</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/artist/5wJ1H6ud777odtZl5gG507">
+                                <div class="frame flex column gap">
+                                    <div class="photo">                                <img src="https://i.scdn.co/image/ab67616100005174e1e00861cdb6bf56b14a1118" alt="">
+
+                                        <img class=" prep icons" src="assets/play.svg" alt="play button">
+                                    </div>
+
+                                    <div class="name">
+                                        <h3>Darshan Raval</h3>
+                                    </div>
+                                    <div class="passion">
+                                        <h4>Artist</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/artist/5wJ1H6ud777odtZl5gG507">
+                                <div class="frame flex column gap">
+                                    <div class="photo">                               <img src="https://i.scdn.co/image/ab67616100005174fc043bea91ac91c222d235c9" alt="">
+
+                                        <img class=" prep icons" src="assets/play.svg" alt="play button">
+                                    </div>
+
+                                    <div class="name">
+                                        <h3>Diljit Dosanjh</h3>
+                                    </div>
+                                    <div class="passion">
+                                        <h4>Artist</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/artist/5wJ1H6ud777odtZl5gG507">
+                                <div class="frame flex column gap">
+                                    <div class="photo">                                <img src="	https://i.scdn.co/image/ab676161000051748de0e6e7e55d7773931ab7f4" alt="">
+
+                                        <img class=" prep icons" src="assets/play.svg" alt="play button">
+                                    </div>
+
+                                    <div class="name">
+                                        <h3>Udit Narayan</h3>
+                                    </div>
+                                    <div class="passion">
+                                        <h4>Artist</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/artist/5wJ1H6ud777odtZl5gG507">
+                                <div class="frame flex column gap">
+                                    <div class="photo">                                <img src="https://i.scdn.co/image/ab67616100005174e34fad78221a2cb31da57946" alt="">
+
+
+                                        <img class=" prep icons" src="assets/play.svg" alt="play button">
+                                    </div>
+
+                                    <div class="name">
+                                        <h3>Sachet Tandon</h3>
+                                    </div>
+                                    <div class="passion">
+                                        <h4>Artist</h4>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://open.spotify.com/artist/5wJ1H6ud777odtZl5gG507">
+                                <div class="frame flex column gap">
+                                    <div class="photo">                                                              <img src="https://i.scdn.co/image/ab67616100005174bc959d7569618ec2af2210f5" alt="">
+
+
+                                        <img class=" prep icons" src="assets/play.svg" alt="play button">
+                                    </div>
+
+                                    <div class="name">
+                                        <h3>Sonu Nigam</h3>
+                                    </div>
+                                    <div class="passion">
+                                        <h4>Artist</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+                <div class=" footer-right  flex row space-between ">
+
+                    
+                    <div>
+                        <ul class="flex column" role="list">
+                            <p>Company</p>
+                            <a href="https://www.spotify.com/in-en/about-us/contact/" role="link">
+                                <span>About</span>
+                            </a>
+                            <a href="https://www.lifeatspotify.com/" role="link">
+                                <span>Jobs</span>
+                            </a>
+                            <a href="https://newsroom.spotify.com/" role="link">
+                                <span>For the Record</span>
+                            </a>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="flex column" role="list">
+                            <p>Communities</p>
+                            <a href="https://artists.spotify.com/" role="link">
+                                <span>For Artists</span>
+                            </a>
+                            <a href="https://developer.spotify.com/" role="link">
+                                <span>Developers</span>
+                            </a>
+                            <a href="https://ads.spotify.com/" role="link">
+                                <span>Advertising</span>
+                            </a>
+                            <a href="https://investors.spotify.com/" role="link">
+                                <span>Investors</span>
+                            </a>
+                            <a href="https://spotifyforvendors.com/" role="link">
+                                <span>Vendors</span>
+                            </a>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="flex column" role="list">
+                            <p>Useful links</p>
+                            <a href="https://support.spotify.com/" role="link">
+                                <span>Support</span>
+                            </a>
+                            <a href="https://www.spotify.com/in-en/free/" role="link">
+                                <span>Free Mobile App</span>
+                            </a>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="flex column " role="list">
+                            <p>Spotify Plans</p>
+                            <a href="https://www.spotify.com/in-en/premium/?ref=spotifycom_footer_premium_individual"
+                                role="link">
+                                <span>Premium Individual</span>
+                            </a>
+                            <a href="https://www.spotify.com/in-en/duo/?ref=spotifycom_footer_premium_duo" role="link">
+                                <span>Premium Duo</span>
+                            </a>
+                            <a href="https://www.spotify.com/in-en/family/?ref=spotifycom_footer_premium_family"
+                                role="link">
+                                <span>Premium Family</span>
+                            </a>
+                            <a href="https://www.spotify.com/in-en/student/?ref=spotifycom_footer_premium_student"
+                                role="link">
+                                <span>Premium Student</span>
+                            </a>
+                            <a href="https://www.spotify.com/in-en/free/?ref=spotifycom_footer_free" role="link">
+                                <span>Spotify Free</span>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="link flex column gap-2">
+                        <div class=" link-1 flex gap-2 space-between">
+                            <div class="hover-scale">
+                                <a  href="https://instagram.com/spotify" aria-label="Instagram" title="Instagram"
+                                    target="_blank" rel="noopener noreferrer">
+
+                                    <div class="logo-2"><img class="filter  icons" src="assets/insta.svg" alt="">
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="hover-scale">
+
+                                <a href="https://twitter.com/spotify" aria-label="Twitter" title="Twitter"
+                                    target="_blank" rel="noopener noreferrer">
+
+                                    <div class="logo-2"> <img class="filter icons" src="assets/twitter.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hover-scale">
+                                <a href="https://facebook.com/spotify" aria-label="Facebook" title="Facebook"
+                                    target="_blank" rel="noopener noreferrer">
+
+                                    <div class="logo-2"> <img class="filter icons" src="assets/facebook.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                    <hr style="margin: 10px;" size="1" >
+                
+                <div class="rectangle footer-last">
+                    <h4>
+                        &copy 2024 Spotify AB
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

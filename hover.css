@@ -1,0 +1,36 @@
+.frame:hover {
+  background-color: #252525;
+}
+
+.frame:hover .prep {
+  transform: translateY(-10px);
+  opacity: 1;
+  transition: ease-in-out 0.3s;
+}
+.dim:hover{
+    transition: ease-in-out 1s;
+    filter: brightness(5); 
+}
+.dim-2:hover{
+    color: rgb(255, 255, 255);
+}
+button:hover{
+    transform: scale(1.05);
+}
+h1:hover{
+    text-decoration: underline;
+}
+.prep:hover{
+    transform: scale(1.2);
+}
+.footer-right span:hover{
+    text-decoration: underline;
+    color: white;
+}
+.card h1:hover{
+    text-decoration: none;
+}
+.box h2 a:hover{
+    color: white;
+    transition: ease-in-out 0.3s;
+}
