@@ -21,16 +21,17 @@ body a {
 }
 .left {
   height: 100vh;
+  min-width: 25%;
 }
 .left-bar-1 {
   padding: 15px;
-  height: 135px;
+  height: 25%;
   margin: 5px;
   background-color: #121212;
   border-radius: 10px;
   z-index: 1;
 }
-ul li {
+.left-bar-1 ul li {
   list-style: none;
   padding: 5px;
   gap: 2px;
@@ -62,7 +63,7 @@ ul li {
 .card {
   border-radius: 10px;
   padding: 15px;
-  gap: 10px;
+  /* gap: 10px; */
   margin: 8px 0px;
   background-color: #242424;
 }
@@ -118,6 +119,9 @@ nav .login {
   padding: 8px 0px;
   position: fixed;
 }
+.nav2{
+  display: none;
+}
 
 nav {
   padding: 0px 25px;
@@ -133,7 +137,7 @@ nav .button {
   background-color: #101010;
 }
 .rectangle {
-  width: 1142px;
+  /* width: 1142px; */
   height: auto;
   margin: 10px;
 }
@@ -151,12 +155,12 @@ nav .button {
 .frame {
   padding: 20px 0px;
   gap: 5px;
-  width: 210px;
-  height: 260px;
+  /* width: 210px; */
+  /* height: 260px; */
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .frame h2 {
@@ -169,7 +173,7 @@ nav .button {
 }
 .name,.passion{
   width: 100%;
-  position:relative;
+  /* position:relative; */
 }
 .frame img:first-child {
   border-radius: 200px;
@@ -185,7 +189,7 @@ nav .button {
 }
 
 #sq-box img:first-child {
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .footer-right {

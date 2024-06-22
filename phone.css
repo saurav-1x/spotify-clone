@@ -1,6 +1,6 @@
-@media (max-width: 820px) {
+@media (max-width: 1000px) {
   .left {
-    min-width: 280px;
+    /* min-width: 25vw; */
     height: 1150px;
   }
   .left-bar-1 {
@@ -11,7 +11,7 @@
     padding-bottom: 50px;
   }
   .rectangle {
-    width: 600px;
+    /* width: 600px; */
   }
   .navbar .button {
     padding: 13px 30px;
@@ -21,7 +21,7 @@
     font-weight: normal;
   }
   h1 a {
-    font-size: 5px;
+    font-size: 15px;
   }
   .icons {
     height: 20px;

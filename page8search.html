@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player</title>
     <link rel="icon" type="image/x-icon" href="favicons.ico">
-     <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="page.css">
     <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="hover.css">
     <link rel="stylesheet" href="page-phone.css">
+    <script src="search.js"></script>
 </head>
+
 <body class="scrollbar">
     <div class="spacer"></div>
     <div class="container flex">
@@ -22,18 +24,17 @@
                                 alt="spotify logo"></a>
                     </li>
                     <li>
-                        <a class="flex row align_center gap-2" href="#home"><img class="icons filter"
+                        <a class="flex row align_center gap-2" href="index.html"><img class="icons filter"
                                 src="assets/home.svg" alt="home logo">Home</a>
                     </li>
-                    <li>
-                        <a class="flex row align_center gap-2 dim" href="https://open.spotify.com/search"
-                            target="_blank"><img class="icons filter-2" src="assets/search.svg" alt="Search"> Search</a>
+                    <li id="search" >
+                        <a class="flex row align_center gap-2 dim" href="page-8-search.html">
+                            <img class="icons filter-2" src="assets/search.svg" alt="Search"> Search</a>
                     </li>
                 </ul>
             </div>
             <div class="left-bar-2  flex column space-between">
                 <div>
-
                     <ul>
                         <div class="flex align_center space-between ">
                             <a class="library flex row align_center dim gap-2" href="#">
@@ -48,7 +49,6 @@
                         </div>
                         <li class="playlist scrollbar">
                             <div class="card flex column justify-content">
-
                                 <div>
                                     <h1>Create your first Playlist</h1>
                                 </div>
@@ -109,31 +109,35 @@
                         </a>
                     </div>
                 </div>
-
                 <div class="eng-button">
+
                     <button class=" button flex align_center "> <img class=" filter" src="assets/lang.svg"
                             alt="">English</button>
                 </div>
             </div>
+
         </div>
         <div class="right">
 
             <div class="navbar">
-                <nav class="flex space-between align_center">
-                    <div class="gap-2 filter  flex ">
+                <nav class="flex space-between align_center" >
+                    <div class=" flex  align_center gap-2 filter  flex ">
                         <a href="index.html">
-
-                            <img class="icons filter " src="assets/less.svg" alt="left">
+                            <img class="icons filter  " src="assets/less.svg" alt="left">
                         </a>
                         <a href="#">
-
                             <img class="icons filter-2 no-cursor " src="assets/greater.svg" alt="right">
                         </a>
+                        <div  class="search-box search flex align_center gap">
+                            <img id="search-icon"  src="assets/search.svg" alt="">
+
+                            <input class="input-box" type="search" placeholder="What do you want to play?" autofocus>
+                        </div>
                     </div>
                     <div>
                         <a href="signup.html">
 
-                            <button class="button signup dim-2">Sign Up</button>
+                            <button class="button signup dim-2" >Sign Up</button>
                         </a>
                         <a href="login.html">
 
@@ -142,107 +146,72 @@
                     </div>
                 </nav>
             </div>
+
             <div id="home" class="home flex column">
+
                 <div class="rectangle flex  gap-2 column">
-                    <div class="box flex space-between align_center">
-                        <h1><a href="#">Featured Charts</a></h1>
-                    </div>
-                    <div class="box flex wrap">
-                        <div class="frame flex column gap" id="sq-box">
-                            <div class="photo">
-                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
-                                    alt="">
-                                <img class="prep icons" src="assets/play.svg" alt="play button">
-                            </div>
-                            <div class=" para flex column gap">
-                                <div class="name">
-                                    <h2>Top Songs - Global</h2>
-                                </div>
-                                <div class="passion">
-                                    <h4>Your weekly update of the most played tracks right no... </h4>
-                                </div>
-                            </div>
+                    <div class="category">
+                        <div class="box flex space-between align_center">
+                            <h1><a href="#">Categories</a></h1>
+                            <h2>
+                                <a href="#">Show all</a>
+                            </h2>
                         </div>
-                        <div class="frame flex column gap" id="sq-box">
-                            <div class="photo">
-                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg"
-                                    alt="">
-                                <img class="prep icons" src="assets/play.svg" alt="play button">
-                            </div>
-                            <div class=" para flex column gap">
-
-                                <div class="name">
-                                    <h2>
-                                        Top Songs USA
-                                    </h2>
+                        <div class="flex row wrap">
+                            <a class="pod-box  " href="#">
+                                <div class="podcard c1">
+                                    <img src="https://t.scdn.co/images/7262179db37c498480ef06bfacb60310.jpeg" alt="">
+                                    <p>Podcast Charts</p>
                                 </div>
-                                <div class="passion">
-                                    <h4>Your weekly update of the most played tracks right no...</h4>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c2">
+                                    <img src="https://t.scdn.co/images/209c867f5bb34076b0dcc9deeb1868e6" alt="">
+                                    <p>Podcasts New Releases</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="frame flex column gap" id="sq-box">
-                            <div class="photo">
-                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
-                                    alt="">
-                                <img class="prep icons" src="assets/play.svg" alt="play button">
-                            </div>
-                            <div class=" para flex column gap">
-
-                                <div class="name">
-                                    <h2>Top 50 - Global</h2>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c3">
+                                    <img src="https://i.scdn.co/image/9af79fd06e34dea3cd27c4e1cd6ec7343ce20af4" alt="">
+                                    <p>Video Podcasts</p>
                                 </div>
-                                <div class="passion">
-                                    <h4>Your weekly update of the most played tracks right now-....</h4>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c4">
+                                    <img src="https://i.scdn.co/image/ab6765630000ba8aaa4830256e4b613f07287208" alt="">
+                                    <p>Self-help</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="frame flex column gap" id="sq-box">
-                            <div class="photo">
-                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg"
-                                    alt="">
-                                <img class="prep icons" src="assets/play.svg" alt="play button">
-                            </div>
-                            <div class=" para flex column gap">
-                                <div class="name">
-                                    <h2>Top 50 - USA<h2>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c5">
+                                    <img src="	https://i.scdn.co/image/e227cd9674618024276c65f1213fb05af34cf512" alt="">
+                                    <p>Business & Technology</p>
                                 </div>
-                                <div class="passion">
-                                    <h4>Your weekly update of the most played tracks right now-...</h4>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c6">
+                                    <img src="https://i.scdn.co/image/96b8b3d5b7c1a5ae952c7489406602539ce651c8" alt="">
+                                    <p>Educational</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="frame flex column gap" id="sq-box">
-                            <div class="photo">
-                                <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg"
-                                    alt="">
-                                <img class="prep icons" src="assets/play.svg" alt="play button">
-                            </div>
-                            <div class=" para flex column gap">
-
-                                <div class="name">
-                                    <h2>Top 50 - Global </h2>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c7">
+                                    <img src="	https://i.scdn.co/image/ab6765630000ba8a4d2153e40a1519784f2b1f3c" alt="">
+                                    <p>Devotion & Mythology</p>
                                 </div>
-                                <div class="passion">
-                                    <h4>Your weekly update of the most played tracks right now-...</h4>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c8">
+                                    <img src="https://i.scdn.co/image/ab6765630000ba8ad67aca773e6929c69a4102ba" alt="">
+                                    <p>Stories</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="frame flex column gap" id="sq-box">
-                            <div class="photo">
-                                <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg"
-                                    alt="">
-                                <img class="prep icons" src="assets/play.svg" alt="play button">
-                            </div>
-                            <div class=" para flex column gap">
-
-                                <div class="name">
-                                    <h2>Top 50 - Global </h2>
+                            </a>
+                            <a class="pod-box" href="#">
+                                <div class="podcard c9">
+                                    <img src="https://i.scdn.co/image/ab6765630000ba8acf45bab65eff11e08f59fba5" alt="">
+                                    <p>Love & Relationships</p>
                                 </div>
-                                <div class="passion">
-                                    <h4>Your weekly update of the most played tracks right now-...</h4>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -318,13 +287,12 @@
                     <div class="link flex column gap-2">
                         <div class=" link-1 flex gap-2 space-between">
                             <div class="hover-scale">
-                                <a  href="https://instagram.com/spotify" aria-label="Instagram" title="Instagram"
+                                <a href="https://instagram.com/spotify" aria-label="Instagram" title="Instagram"
                                     target="_blank" rel="noopener noreferrer">
 
                                     <div class="logo-2"><img class="filter  icons" src="assets/insta.svg" alt="">
                                     </div>
                                 </a>
-
                             </div>
                             <div class="hover-scale">
 
@@ -346,8 +314,8 @@
                         </div>
                     </div>
                 </div>
-                    <hr style="margin: 10px;" size="1" >
-                
+                <hr style="margin: 10px;" size="1">
+
                 <div class="rectangle footer-last">
                     <h4>
                         &copy 2024 Spotify AB
@@ -358,4 +326,5 @@
 
     </div>
 </body>
+
 </html>

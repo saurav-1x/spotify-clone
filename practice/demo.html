@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Music Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .player {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .controls button {
+            background: #007bff;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .seekbar {
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <input type="search">
+    <div class="player">
+        <h2>Music Player</h2>
+        <audio id="audio" src="song1.mp3"></audio>
+        <div class="controls">
+            <button id="prev">Prev</button>
+            <button id="play-pause">Play</button>
+            <button id="next">Next</button>
+        </div>
+        <input type="range" id="seekbar" class="seekbar" min="0" max="100" value="0">
+    </div>
+
+    <script>
+        const audio = document.getElementById('audio');
+        const playPauseButton = document.getElementById('play-pause');
+        const nextButton = document.getElementById('next');
+        const prevButton = document.getElementById('prev');
+        const seekbar = document.getElementById('seekbar');
+
+        const songs = ['song1.mp3', 'song2.mp3', 'song3.mp3'];
+        let currentSongIndex = 0;
+
+        playPauseButton.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playPauseButton.textContent = 'Pause';
+            } else {
+                audio.pause();
+                playPauseButton.textContent = 'Play';
+            }
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentSongIndex = (currentSongIndex + 1) % songs.length;
+            audio.src = songs[currentSongIndex];
+            audio.play();
+            playPauseButton.textContent = 'Pause';
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+            audio.src = songs[currentSongIndex];
+            audio.play();
+            playPauseButton.textContent = 'Pause';
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            seekbar.value = (audio.currentTime / audio.duration) * 100;
+        });
+
+        seekbar.addEventListener('input', () => {
+            audio.currentTime = (seekbar.value / 100) * audio.duration;
+        });
+
+        audio.addEventListener('ended', () => {
+            nextButton.click();
+        });
+    </script>
 </body>
 </html>

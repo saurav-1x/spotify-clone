@@ -1,13 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    const searchBar=document.getElementById("search");
-    searchInput.addEventListener('focus', () => {
-        searchBar.classList.add('active');
+    const inputBox = document.querySelector('.input-box');
+    const box = document.querySelector('.search-box');
+    const searchicon=document.getElementById("search-icon")
+    const search=document.getElementById("search")
+    searchicon.addEventListener("click",function(){inputBox.focus();
+        search.focus();
+    })
+    inputBox.addEventListener('focus', () => {
+        box.classList.add('focused');
     });
 
-    document.addEventListener('click', (event) => {
-        if (!searchBar.contains(event.target) && event.target !== searchIcon) {
-            searchBar.classList.remove('active');
-        }
+    inputBox.addEventListener('blur', () => {
+        box.classList.remove('focused');
     });
-})
+});

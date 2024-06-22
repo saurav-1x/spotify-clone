@@ -231,7 +231,6 @@ nav .button {
   display: inline-block;
   opacity: 0;
 }
-
 .footer-last h4 {
   font-size: 15px;
   margin: 40px 10px;
@@ -240,18 +239,16 @@ nav .button {
 .footer-right ul p {
   cursor: text;
 }
-
 .podcast {
   height: 200px;
   background: linear-gradient(#599383, #24715b, #1c5a49, #11382e);
   font-weight: 900;
-  font-size: 96px;
 }
 .podcast p {
   padding-top: 40px;
+  font-size: 96px;
   padding-left: 25px;
 }
-
 .podcard {
   width: 260px;
   overflow: hidden;
@@ -304,39 +301,46 @@ nav .button {
 .c7 {
   background-color: #7d4b32;
 }
-
 .c8 {
   background-color: #0d72ed;
 }
-
 .c9 {
   background-color: #e1118c;
-
 }
-
 .search{
-  /* background-color: rgb(59, 56, 56); */
-  /* border: 1px solid rgb(0, 0, 0); */
-  cursor: pointer;
+  /* cursor: pointer; */
+  /* max-width: 800px; */
   border-radius: 55px;
-  padding: 15px 18px;
+  padding: 5px 8px;
 }
 .search ,input{
   background-color: rgb(201, 199, 199);
 }
 .search img{
-  height: 20px;
+  height: 18px;
 }
-.search input{
+.search-box input{
   border: none;
+  padding: 12px 2px;
   outline: none;
-  max-width: 200px;
-  /* padding: 5px; */
-  /* background-color: red; */
+  /* max-width: 200px; */
+  min-width: 250px;
   font-family: Arial, Helvetica, sans-serif;
-  /* font-size: 10px; */
   font-weight: 600;
 }
-.search.active{
+.search-box.focused{
   outline: 2px solid rgb(0, 0, 0);
+}
+
+
+
+.songs{
+  height: 60px;
+  /* width: 100%; */
+  background-color: red;
+  position: relative;
+  padding: 0 15px;
+  margin: 0 35px;
+  border-radius: 5px;
+  /* margin-left: 35px; */
 }

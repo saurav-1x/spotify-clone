@@ -1,0 +1,59 @@
+@media (max-width: 400px) {
+
+.left{
+    display: none;
+}
+.right{
+    overflow: hidden;
+}
+.frame img:first-child{
+    border-radius: 5px;
+}
+.frame img:first-child{
+    height: 100px;
+    width: 100px;
+}
+.rectangle{
+    margin:0px 10px;
+}
+.gap-2{
+    gap: 0px;
+}
+
+.scroll{
+    overflow: scroll;
+  scrollbar-width: none;
+}
+.footer-right{
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.footer-right div ul{
+    gap: 10px;
+}
+.link-1{
+    gap: 10px;
+}
+.frame  h2{
+    font-size: 14px;
+}
+.passion h4 {
+    font-size: 12px;
+}.box h1{
+    font-size: 20px;
+}
+.rectangle h2 a{
+    font-size: 12px;
+}
+nav .button {
+    padding: 6px 16px;
+    border: none;
+}
+.nav1{
+    /* display: none; */
+}
+.nav2{
+    /* display:block; */
+}
+}
